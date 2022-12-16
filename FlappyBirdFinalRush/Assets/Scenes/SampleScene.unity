@@ -614,6 +614,7 @@ GameObject:
   - component: {fileID: 1062915906}
   - component: {fileID: 1062915905}
   - component: {fileID: 1062915904}
+  - component: {fileID: 1062915908}
   m_Layer: 0
   m_Name: Ground 2
   m_TagString: Untagged
@@ -753,6 +754,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1062915908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062915902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0df3ff1ce32e4d4c8d6a3c752c71053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1126528619
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +813,7 @@ MonoBehaviour:
   gameOverText: {fileID: 730369638}
   gameOver: 0
   scrollSpeed: -1.5
+  scoreText: {fileID: 1019973827}
 --- !u!1 &1479863209
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +827,7 @@ GameObject:
   - component: {fileID: 1479863212}
   - component: {fileID: 1479863214}
   - component: {fileID: 1479863215}
+  - component: {fileID: 1479863216}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -916,8 +931,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.55}
-  m_SizeDelta: {x: 20.48, y: 5.12}
+  m_AnchoredPosition: {x: 0, y: -2.545}
+  m_SizeDelta: {x: 20.48, y: 5.1301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1479863214
 MonoBehaviour:
@@ -952,6 +967,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1479863216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479863209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0df3ff1ce32e4d4c8d6a3c752c71053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1848219068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1143,7 @@ SpriteRenderer:
   m_SortingLayerID: 1063161379
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1330394, guid: a5d1b0b2545665c4e9f5c7648daa98df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cb1fe37c54db99409bd8fc1608a3cd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1136,7 +1163,7 @@ Transform:
   m_GameObject: {fileID: 1885148117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.5941, y: 3.1903, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1159,7 +1186,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.13, y: 0.67}
+    oldSize: {x: 0.73, y: 0.7}
     newSize: {x: 1.13, y: 0.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1167,21 +1194,24 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.565, y: 0.005}
-      - {x: 0.525, y: 0.044999998}
-      - {x: 0.285, y: 0.235}
-      - {x: 0.005, y: 0.33499998}
-      - {x: -0.285, y: 0.33499998}
-      - {x: -0.345, y: 0.325}
-      - {x: -0.48499998, y: 0.24499999}
-      - {x: -0.565, y: 0.105}
-      - {x: -0.565, y: -0.145}
-      - {x: -0.545, y: -0.24499999}
-      - {x: -0.39499998, y: -0.33499998}
-      - {x: 0.21499999, y: -0.33499998}
-      - {x: 0.435, y: -0.185}
-      - {x: 0.555, y: -0.105}
-      - {x: 0.565, y: -0.044999998}
+    - - {x: 0.21554048, y: -0.024317302}
+      - {x: 0.21732076, y: -0.019325374}
+      - {x: 0.20936812, y: 0.06547163}
+      - {x: 0.17950872, y: 0.067914024}
+      - {x: 0.16500793, y: 0.11487191}
+      - {x: 0.08174908, y: 0.109652616}
+      - {x: -0.047125913, y: 0.10911794}
+      - {x: -0.18359965, y: 0.10855175}
+      - {x: -0.25271785, y: 0.10376884}
+      - {x: -0.27793148, y: 0.09996862}
+      - {x: -0.28128847, y: -0.085748814}
+      - {x: -0.19535911, y: -0.074638225}
+      - {x: -0.22012801, y: -0.079398945}
+      - {x: -0.087732814, y: -0.08449111}
+      - {x: -0.04448523, y: -0.08509725}
+      - {x: 0.007420232, y: -0.084937796}
+      - {x: 0.19977024, y: -0.08727741}
+      - {x: 0.20090011, y: -0.050829407}
 --- !u!50 &1885148121
 Rigidbody2D:
   serializedVersion: 4
